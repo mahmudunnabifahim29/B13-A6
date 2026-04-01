@@ -1,22 +1,6 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-/**
- * ProductsSection Component
- * Displays products in a responsive grid layout with tab-based filtering
- * Features:
- * - Dynamic product grid (responsive: 1 col mobile, 2 cols tablet, 3 cols desktop)
- * - Toggle between viewing all products and cart items
- * - Real-time cart count display in tab
- * - Empty state messaging
- * - Product card management (add/remove from cart)
- * 
- * Props:
- * - products: Array of all product objects
- * - onAddToCart: Callback to handle adding product to cart
- * - activeTab: Current active tab ('products' or 'cart')
- * - setActiveTab: Function to change active tab
- */
 const ProductsSection = ({ products, onAddToCart, activeTab, setActiveTab }) => {
   const cartCount = products.filter((p) => p.inCart).length;
 

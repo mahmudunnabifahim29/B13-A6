@@ -8,19 +8,12 @@ import Stats from './components/Stats';
 import ProductsSection from './components/ProductsSection';
 import CartSection from './components/CartSection';
 import Steps from './components/Steps';
+import Pricing from './components/Pricing';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 
 import products from './data/products';
 
-/**
- * App - Main application component
- * Manages:
- * - Shopping cart state and operations (add, remove, checkout)
- * - Product list state with cart status tracking
- * - View toggle between Products and Cart sections
- * - Toast notifications for user feedback
- */
 function App() {
   const [cart, setCart] = useState([]);
   const [activeTab, setActiveTab] = useState('products');
@@ -118,6 +111,7 @@ function App() {
       )}
 
       <Steps />
+      <Pricing />
       <CTA />
       <Footer />
 

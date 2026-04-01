@@ -1,4 +1,6 @@
 import React from 'react';
+import heroImage from '../assets/banner.png';
+import playIcon from '../assets/Play.png';
 
 const Banner = () => {
   return (
@@ -22,8 +24,8 @@ const Banner = () => {
               <button className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white border-0 rounded-full px-12 py-4 font-bold text-lg transition-all transform hover:scale-105 hover:shadow-xl">
                 Explore Products
               </button>
-              <button className="border-2 border-purple-600 text-purple-600 hover:bg-purple-50 rounded-full px-12 py-4 font-bold text-lg transition-all">
-                <i className="fas fa-play mr-2"></i>
+              <button className="border-2 border-purple-600 text-purple-600 hover:bg-purple-50 rounded-full px-12 py-4 font-bold text-lg transition-all flex items-center justify-center gap-3">
+                <img src={playIcon} alt="Play icon" className="h-5 w-5" loading="lazy" />
                 Watch Demo
               </button>
             </div>
@@ -31,7 +33,12 @@ const Banner = () => {
 
           {/* Right Image */}
           <div className="hidden md:flex items-center justify-center">
-            <img src="/assets/banner.png" alt="Digital Tools Banner" className="w-full h-auto rounded-lg object-cover" />
+            <img
+              src={heroImage}
+              alt="Digital tools workspace illustration"
+              className="w-full h-auto rounded-[32px] object-cover shadow-2xl shadow-purple-200/60"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

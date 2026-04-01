@@ -1,16 +1,5 @@
 import React from 'react';
 
-/**
- * ProductCard Component
- * Displays a reusable product card with features, pricing, and action buttons
- * Supports both product listing view and cart view modes
- * 
- * Props:
- * - product: Product object with all details
- * - onAddToCart: Callback function when product is added to cart
- * - inCart: Boolean flag to show if product is in cart
- * - onRemove: Callback function to remove product from cart
- */
 const ProductCard = ({ product, onAddToCart, inCart = false, onRemove = null }) => {
   const getTagColor = (tagType) => {
     switch (tagType) {

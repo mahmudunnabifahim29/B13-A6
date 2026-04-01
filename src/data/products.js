@@ -1,3 +1,10 @@
+import writingIcon from '../assets/products/writing.png';
+import designIcon from '../assets/products/design-tool.png';
+import stockIcon from '../assets/products/shopping-cart.png';
+import automationIcon from '../assets/products/operation.png';
+import resumeIcon from '../assets/products/portfolio.png';
+import socialIcon from '../assets/products/social-media.png';
+
 const products = [
   {
     id: 1,
@@ -7,7 +14,7 @@ const products = [
     period: "monthly",
     tag: "Best Seller",
     tagType: "best-seller",
-    icon: "/assets/products/writing_2327400 1.png",
+    icon: writingIcon,
     features: [
       "Unlimited AI generations",
       "50+ writing templates",
@@ -23,7 +30,7 @@ const products = [
     period: "one-time",
     tag: "Popular",
     tagType: "popular",
-    icon: "/assets/products/design-tool.png",
+    icon: designIcon,
     features: [
       "2000+ templates",
       "Monthly updates",
@@ -39,7 +46,7 @@ const products = [
     period: "monthly",
     tag: "New",
     tagType: "new",
-    icon: "/assets/products/shopping-cart.png",
+    icon: stockIcon,
     features: [
       "10M+ assets",
       "Commercial use",
@@ -55,7 +62,7 @@ const products = [
     period: "monthly",
     tag: "Popular",
     tagType: "popular",
-    icon: "/assets/products/operation.png",
+    icon: automationIcon,
     features: [
       "50+ automations",
       "API access",
@@ -71,7 +78,7 @@ const products = [
     period: "one-time",
     tag: "New",
     tagType: "new",
-    icon: "/assets/products/portfolio.png",
+    icon: resumeIcon,
     features: [
       "100+ templates",
       "ATS optimization",
@@ -87,7 +94,7 @@ const products = [
     period: "monthly",
     tag: "Best Seller",
     tagType: "best-seller",
-    icon: "/assets/products/social-media.png",
+    icon: socialIcon,
     features: [
       "5000+ assets",
       "Scheduler included",

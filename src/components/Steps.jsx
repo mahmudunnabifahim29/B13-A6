@@ -1,4 +1,7 @@
 import React from 'react';
+import userIcon from '../assets/user.png';
+import packageIcon from '../assets/package.png';
+import rocketIcon from '../assets/rocket.png';
 
 const Steps = () => {
   const steps = [
@@ -6,19 +9,19 @@ const Steps = () => {
       number: '01',
       title: 'Create Account',
       description: 'Sign up for free in seconds. No credit card required to get started.',
-      icon: 'fas fa-user',
+      icon: userIcon,
     },
     {
       number: '02',
       title: 'Choose Products',
       description: 'Browse our catalog and select the tools that fit your needs.',
-      icon: 'fas fa-box',
+      icon: packageIcon,
     },
     {
       number: '03',
       title: 'Start Creating',
       description: 'Download and start using your premium tools immediately.',
-      icon: 'fas fa-rocket',
+      icon: rocketIcon,
     },
   ];
 
@@ -47,7 +50,7 @@ const Steps = () => {
               {/* Icon Circle - centered */}
               <div className="flex justify-center mb-6">
                 <div className="w-20 h-20 rounded-full bg-purple-100 flex items-center justify-center">
-                  <i className={`${step.icon} text-purple-600 text-2xl`}></i>
+                  <img src={step.icon} alt={step.title} className="h-10 w-10" loading="lazy" />
                 </div>
               </div>
 
